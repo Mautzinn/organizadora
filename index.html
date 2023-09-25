@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+        <h3 style="margin-top: 20px; margin-bottom: 20px;">Lista organizadora</h3>
+        <div>
+            <span>1</span>
+            <input type="text" placeholder="palavra" id="word1">
+            <br>
+            <span>2</span>
+            <input type="text" placeholder="palavra" id="word2">
+            <br>
+            <span>3</span>
+            <input type="text" placeholder="palavra" id="word3">
+            <br>
+            <span>4</span>
+            <input type="text" placeholder="palavra" id="word4">
+        </div>
+        <button onclick="submit()" id="submitButton">Enviar</button>
+        <div id="displayName" style="font-weight: bold;"></div>
+        <button onclick="sorting()" id="sortButton">Organizar</button>
+    </center>
+    <script>
+        wordArray=[];
+        function submit() {
+            var word1=document.getElementById("word1").value;
+            var word2=document.getElementById("word2").value;   
+            var word3=document.getElementById("word3").value;     
+            var word4=document.getElementById("word4").value;      
+            
+            wordArray.push(word1);
+            wordArray.push(word2);
+            wordArray.push(word3);
+            wordArray.push(word4);
+
+            document.getElementById("displayName").innerHTML=wordArray;
+            document.getElementById("submitButton").style.display="none";
+            document.getElementById("sortButton").style.display="inline-block"
+        }
+        function sorting() {
+            wordArray.sort();
+            document.getElementById("displayName").innerHTML=wordArray;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--welcome to the privada-->
